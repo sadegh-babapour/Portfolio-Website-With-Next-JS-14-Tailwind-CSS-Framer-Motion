@@ -24,18 +24,22 @@ const aboutData = [
       {
         title: "Web Development",
         icons: [
-          <FaHtml5 />,
-          <FaCss3 />,
-          <FaJs />,
-          <FaReact />,
-          <SiNextdotjs />,
-          <SiFramer />,
-          <FaWordpress />,
+          <FaHtml5 key="html" />,
+          <FaCss3 key="css" />,
+          <FaJs key="js" />,
+          <FaReact key="react" />,
+          <SiNextdotjs key="next" />,
+          <SiFramer key="framer" />,
+          <FaWordpress key="wordpress" />,
         ],
       },
       {
         title: "UI/UX Design",
-        icons: [<FaFigma />, <SiAdobexd />, <SiAdobephotoshop />],
+        icons: [
+          <FaFigma key="figma" />,
+          <SiAdobexd key="adobexd" />,
+          <SiAdobephotoshop key="adobephotoshop" />,
+        ],
       },
     ],
   },
@@ -186,7 +190,7 @@ const About = () => {
             {aboutData.map((item, itemIndex) => {
               return (
                 <div
-                  key={item.title}
+                  key={itemIndex}
                   className={`${
                     index === itemIndex &&
                     "text-accent after:w-[100%] after:bg-accent after:transition-all after:duration-300"
@@ -203,7 +207,7 @@ const About = () => {
             {aboutData[index].info.map((item, itemIndex) => {
               return (
                 <div
-                  key={item.title}
+                  key={itemIndex}
                   className="flex-1 flex flex-col md:flex-row max-w-max gap-x-2 items-center text-white/60"
                 >
                   <div className="font-light mb-2 md:mb-0">{item.title}</div>
