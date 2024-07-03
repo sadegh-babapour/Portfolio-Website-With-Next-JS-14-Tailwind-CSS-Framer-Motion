@@ -3,10 +3,10 @@ import React, { useState } from "react";
 import {
   FaHtml5,
   FaCss3,
-  FaJs,
   FaReact,
-  FaWordpress,
-  FaFigma,
+  FaDatabase,
+  FaPython,
+  FaJava,
 } from "react-icons/fa";
 
 import {
@@ -26,19 +26,15 @@ const aboutData = [
         icons: [
           <FaHtml5 key="html" />,
           <FaCss3 key="css" />,
-          <FaJs key="js" />,
           <FaReact key="react" />,
-          <SiNextdotjs key="next" />,
-          <SiFramer key="framer" />,
-          <FaWordpress key="wordpress" />,
         ],
       },
       {
-        title: "UI/UX Design",
+        title: "Data",
         icons: [
-          <FaFigma key="figma" />,
-          <SiAdobexd key="adobexd" />,
-          <SiAdobephotoshop key="adobephotoshop" />,
+          <FaDatabase key="SQL Server" />,
+          <FaPython key="Python" />,
+          <FaJava key="Java" />,
         ],
       },
     ],
@@ -60,16 +56,20 @@ const aboutData = [
     title: "experience",
     info: [
       {
-        title: "UX/UI Designer - XYZ Company",
-        stage: "2012 - 2023",
+        title: "Business Analyst - TELUS Spark Science",
+        stage: "2023 - Present",
       },
       {
-        title: "Web Developer - ABC Agency",
-        stage: "2010 - 2012",
+        title: "Backend Developer - GeoXtra",
+        stage: "2021 - 2023",
       },
       {
-        title: "Intern - DEF Corporation",
-        stage: "2008 - 2010",
+        title: "Software Developer - Raven Bay Services",
+        stage: "2019 - 2021",
+      },
+      {
+        title: "Reserve Evaluation Engineer - Sproule Associates",
+        stage: "2014 - 2015",
       },
     ],
   },
