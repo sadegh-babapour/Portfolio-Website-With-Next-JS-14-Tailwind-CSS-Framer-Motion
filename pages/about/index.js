@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 // icons
+import { IoMdAnalytics } from "react-icons/io";
+
 import {
   FaHtml5,
   FaCss3,
@@ -7,6 +9,7 @@ import {
   FaDatabase,
   FaPython,
   FaJava,
+  FaAccessibleIcon,
 } from "react-icons/fa";
 
 import {
@@ -27,14 +30,17 @@ const aboutData = [
           <FaHtml5 key="html" />,
           <FaCss3 key="css" />,
           <FaReact key="react" />,
+          <FaAccessibleIcon key="Java22" />,
+
         ],
       },
       {
         title: "Data",
         icons: [
-          <FaDatabase key="SQL Server" />,
+          <FaDatabase key="SQL" />,
           <FaPython key="Python" />,
           <FaJava key="Java" />,
+          
         ],
       },
     ],
